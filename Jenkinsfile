@@ -15,7 +15,7 @@ pipeline{
         stage('Git Checkout'){
             steps{
                 echo 'Checking out Source Code From Git Repo'
-                Checkout scm
+                checkout scm
             }
         }
         stage('Check Docker'){
