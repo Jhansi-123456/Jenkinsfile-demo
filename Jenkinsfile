@@ -20,7 +20,7 @@ pipeline{
         }
         stage('Check Docker'){
             steps{
-                bat 'decker --version'
+                bat 'docker --version'
             }
         }
         stage('Dependencies'){
